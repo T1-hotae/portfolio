@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import { projects } from "../data/projects";
 import ProjectCard from "./ProjectCard";
 
+function getYoutubeEmbedUrl(url) {
+  if (!url) return null;
+  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([A-Za-z0-9_-]{11})/);
+  return match ? `https://www.youtube.com/embed/${match[1]}` : null;
+}
+
 const ArrowIcon = () => (
   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
     <path d="M7 17L17 7M17 7H7M17 7v10" />
@@ -46,11 +52,22 @@ export default function Projects() {
       {selected && (
         <div className="modal-backdrop" onClick={() => setSelected(null)}>
           <div className="project-modal" onClick={(e) => e.stopPropagation()}>
-            <div className="modal-thumb" style={{ background: selected.gradient }}>
-              {selected.thumbnail && (
-                <img src={selected.thumbnail} alt={selected.title} className="modal-thumb-img" />
-              )}
-            </div>
+            {getYoutubeEmbedUrl(selected.youtube) ? (
+              <div className="modal-video">
+                <iframe
+                  src={getYoutubeEmbedUrl(selected.youtube)}
+                  title={selected.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            ) : (
+              <div className="modal-thumb" style={{ background: selected.gradient }}>
+                {selected.thumbnail && (
+                  <img src={selected.thumbnail} alt={selected.title} className="modal-thumb-img" />
+                )}
+              </div>
+            )}
             <div className="modal-body">
               <button className="modal-close" onClick={() => setSelected(null)} aria-label="닫기">✕</button>
               <p className="overlay-period">{selected.period}</p>

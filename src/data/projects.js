@@ -45,7 +45,7 @@ export const projects = [
     thumbnail: new URL("../assets/moyo.png", import.meta.url).href,
     github: "https://github.com/Moyo-project/Moyo_front",
     demo: null,
-    youtube: null,
+    youtube: "https://youtu.be/EiS4uzRdQ9s?si=PsaotVYH29RZe28P",
     period: "2025.09 ~ 2025.12",
     gradient: "linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%)",
   },
@@ -87,7 +87,7 @@ export const projects = [
     thumbnail: new URL("../assets/kangrimi.jpg", import.meta.url).href,
     github: "https://github.com/CampusNotice/Frontend",
     demo: null,
-    youtube: null,
+    youtube: "https://youtube.com/shorts/K7Fhfh7sPzY?feature=share",
     appStore:
       "https://apps.apple.com/kr/app/%EA%B0%95%EB%A6%BC%EC%9D%B4/id6758569535",
     playStore:
@@ -167,7 +167,12 @@ export const projects = [
 - 프론트엔드: React Native (Expo 54), TypeScript, Zustand, TanStack Query, Reanimated, Lottie
 - 백엔드: Java 21, Spring Boot, Spring Security + JWT, Spring Data JPA
 - DB: PostgreSQL
-- 배포: Docker · Docker Compose`,
+- 배포: Docker · Docker Compose
+
+**배운 점**
+- 기획 문서의 중요성: PRD·ERD·네이밍 컨벤션 등 협업 기준 문서가 없어 혼선이 생겼고, 명확한 문서화가 팀 개발의 핵심임을 체감했다.
+- React Native 애니메이션 심화: SVG 요소별 Reanimated 애니메이션으로 캐릭터를 구현하고, Lottie 라이브러리까지 활용하며 모바일 애니메이션 기법을 폭넓게 익혔다.
+- 다양한 협업 스타일 경험: 3명의 백엔드 팀원과 각각 다른 방식(알고리즘 공동 설계, API 문서 기반 티키타카, AI 워크플로 문서 공유)으로 협업하며 상황에 맞는 소통 방식을 찾는 능력을 키웠다.`,
     tech: [
       "React Native",
       "Expo",
@@ -182,7 +187,7 @@ export const projects = [
     thumbnail: new URL("../assets/Codebite.png", import.meta.url).href,
     github: null,
     demo: null,
-    youtube: null,
+    youtube: "https://youtube.com/shorts/AqkF0Z2CXk0?feature=share",
     period: "2026.03 ~ 2026.06",
     gradient: "linear-gradient(135deg, #111111 0%, #1c1c1c 50%, #252525 100%)",
   },
@@ -221,7 +226,12 @@ export const projects = [
 **기술 아키텍처**
 - 프론트엔드: Next.js 16 (App Router), TypeScript 5, Tailwind CSS 4, Zustand + TanStack Query, Axios, Vercel Blob
 - 백엔드: Java 21, Spring Boot 4.0, Spring Data JPA, Spring Security + JWT (jjwt 0.12), PostgreSQL, Redis (Lettuce), SpringDoc OpenAPI, Gradle
-- 배포: Vercel (FE) · Render + Docker Compose (BE + DB + Redis)`,
+- 배포: Vercel (FE) · Render + Docker Compose (BE + DB + Redis)
+
+**배운 점**
+- Next.js Middleware · Proxy 활용: API 요청을 서버 사이드에서 프록시 처리하고 Axios 인스턴스를 구성하며 인증 토큰 관리와 요청 흐름 설계를 익혔다.
+- Spring 백엔드 풀사이클 경험: ERD 설계부터 Entity · Repository · Service · Controller 코드 작성까지 전 과정을 직접 구현하며 백엔드 아키텍처를 체득했다.
+- 다양한 외부 툴 연동: Vercel Blob(이미지 스토리지), Redis(OTP 캐싱), OpenAI DALL-E(AI 요약, 썸네일 생성), GitHub OAuth 등 여러 서비스를 실제로 연동하며 통합 개발 경험을 쌓았다.`,
     tech: [
       "Next.js",
       "TypeScript",
