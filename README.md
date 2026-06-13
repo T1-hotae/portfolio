@@ -2,8 +2,6 @@
 
 프론트엔드 개발자 황호태의 개인 포트폴리오 웹사이트입니다.
 
-**배포 주소:** https://HwangHotae.github.io
-
 ---
 
 ## 소개
@@ -17,30 +15,33 @@
 
 ## 프로젝트 목록
 
-| 프로젝트 | 설명 | 기간 | 기술 |
-|--------|------|------|------|
-| **모요** | Slack·밴드 UX를 개선한 커뮤니티 웹 서비스 (게시물, 실시간 채팅, 캘린더) | 2025.09 ~ 2025.12 | React, TypeScript, Redux Toolkit, FastAPI, PostgreSQL, AWS EC2 |
-| **강림이** | 강남대 공지·알림 통합 모바일 앱 (App Store · Google Play 출시) | 2025.12 ~ 2026.01 | React Native, Expo, FastAPI, PostgreSQL, AWS EC2 |
-| **두고먹고** | 냉장고 식재료 관리 및 AI 레시피 추천 앱 | 2025.12 ~ 2026.02 | React Native, Expo, TypeScript, AI Vision API |
-| **코드바이트** | CS 개념 퀴즈 학습 모바일 앱 (게이미피케이션) | 2026.03 ~ 2026.06 | React Native, Expo, TypeScript, Zustand, Spring Boot |
-| **Pofol** | 포트폴리오 공유 & 팀 모집 플랫폼 (캡스톤 디자인) | 2026.03 ~ 2026.06 | Next.js, TypeScript, Spring Boot, PostgreSQL, Redis, Vercel |
+| 프로젝트       | 설명                                                                    | 기간              | 기술                                                           |
+| -------------- | ----------------------------------------------------------------------- | ----------------- | -------------------------------------------------------------- |
+| **모요**       | Slack·밴드 UX를 개선한 커뮤니티 웹 서비스 (게시물, 실시간 채팅, 캘린더) | 2025.09 ~ 2025.12 | React, TypeScript, Redux Toolkit, FastAPI, PostgreSQL, AWS EC2 |
+| **강림이**     | 강남대 공지·알림 통합 모바일 앱 (App Store · Google Play 출시)          | 2025.12 ~ 2026.01 | React Native, Expo, FastAPI, PostgreSQL, AWS EC2               |
+| **두고먹고**   | 냉장고 식재료 관리 및 AI 레시피 추천 앱                                 | 2025.12 ~ 2026.02 | React Native, Expo, TypeScript, AI Vision API                  |
+| **코드바이트** | CS 개념 퀴즈 학습 모바일 앱 (게이미피케이션)                            | 2026.03 ~ 2026.06 | React Native, Expo, TypeScript, Zustand, Spring Boot           |
+| **Pofol**      | 포트폴리오 공유 & 팀 모집 플랫폼 (캡스톤 디자인)                        | 2026.03 ~ 2026.06 | Next.js, TypeScript, Spring Boot, PostgreSQL, Redis, Vercel    |
 
 ---
 
 ## 기술 스택
 
 **Frontend**
+
 - React, React Native, Next.js
 - TypeScript, JavaScript
 - Redux Toolkit, Zustand, TanStack Query
 - TailwindCSS, Shadcn/UI
 
 **Backend**
+
 - FastAPI (Python)
 - Spring Boot (Java)
 - PostgreSQL, Redis
 
 **DevOps / Infra**
+
 - AWS EC2, Docker, Docker Compose, Nginx
 - GitHub Actions (CI/CD)
 - Vercel
@@ -49,11 +50,11 @@
 
 ## 경력 및 활동
 
-| 활동 | 기관 | 기간 |
-|------|------|------|
-| SW개발자 6기 인턴 | 인턴IN메타 | 2025.07 ~ 2025.08 |
+| 활동                    | 기관       | 기간              |
+| ----------------------- | ---------- | ----------------- |
+| SW개발자 6기 인턴       | 인턴IN메타 | 2025.07 ~ 2025.08 |
 | MOTIV 학과동아리 부회장 | 강남대학교 | 2025.03 ~ 2025.12 |
-| 교학1팀 근로 장학생 | 강남대학교 | 2025.03 ~ 현재 |
+| 교학1팀 근로 장학생     | 강남대학교 | 2025.03 ~ 현재    |
 
 ---
 
