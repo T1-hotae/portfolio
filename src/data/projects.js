@@ -192,6 +192,81 @@ export const projects = [
     gradient: "linear-gradient(135deg, #111111 0%, #1c1c1c 50%, #252525 100%)",
   },
   {
+    id: "gyohak",
+    title: "교학 점검 배정",
+    subtitle: "강의실 점검표 자동 배정 사이트 · 서비스 중",
+    description:
+      "매일 아침 20~60분씩 소요되던 강의실 점검 배정 업무를 자동화한 사이트. 균등 배분·층수 최소화·퇴근 여유 등 4가지 규칙을 알고리즘으로 정의해 클릭 한 번으로 배정표를 생성.",
+    longDescription: `교학1팀 근로 학생이 매일 아침 수작업으로 작성하던 강의실 점검표를 자동화한 사이트입니다.
+
+**개요**
+- 기간: 2026.03 ~ 2026.05
+- 역할: 개인 프로젝트 (기획 · 설계 · 개발 전 과정)
+
+**문제 정의**
+매일 아침 빈 강의실 파악 → 행사 확인 → 출근 근로자 확인 → 배치 작업에 최대 1시간이 소요되었고, "적절히 배분"이라는 추상적 기준이 매번 고민을 만들었습니다.
+
+**알고리즘 핵심 규칙 4가지**
+1. 균등 배분 — 학생 1인당 점검 강의실 수 오차 ±1 이내
+2. 한 번에 점검 — 한 타임에 모아서 끝낼 수 있도록 배치
+3. 층수 최소화 — 한 번의 점검에서 이동 층 최대 2개 이내
+4. 퇴근 전 여유 — 퇴근 50분 전 이후로는 배정 제외
+
+**주요 기능**
+- HWP·메모장 강의실 시간표 붙여넣기 자동 파싱 (세로형·가로형 지원)
+- ⚡ 자동 배정 / 🔀 다시 배정 버튼으로 즉시 결과 생성
+- ✏ 수동 배정 모드로 클릭 기반 세부 조정
+- 요일별 출근자 자동 로드 및 시간표 편집 (30분 단위)
+- 행사 등록 시 해당 시간대 자동 배정 제외
+- 📋 표 복사 — HWP에 바로 붙여넣을 수 있는 형식으로 클립보드 복사
+
+**기대 효과**
+매일 아침 절약되는 30분 → 일 기준 5,160원 가치의 시간 절감
+
+**기술 스택**
+- React 18 + Vite 6, 순수 CSS (외부 UI 라이브러리 미사용)`,
+    tech: ["React", "JavaScript", "Vite", "CSS"],
+    thumbnail: new URL("../assets/Gyohak.png", import.meta.url).href,
+    github: "https://github.com/T1-hotae/Gyohak1Team",
+    demo: "https://gyohak1-team.vercel.app",
+    youtube: null,
+    period: "2026.03 ~ 2026.05",
+    gradient: "linear-gradient(135deg, #0a1628 0%, #1a2d4a 50%, #0d2137 100%)",
+  },
+  {
+    id: "yeflix",
+    title: "Yeflix",
+    subtitle: "개인 영화 감상 일기 서비스 · 서비스 중",
+    description:
+      "영화를 검색하고 OTT 플랫폼 바로가기를 확인하며, 별점·관람 날짜·태그가 포함된 감상 일기를 남길 수 있는 개인 영화 기록 서비스.",
+    longDescription: `영화를 보기 시작한 후 감상문을 직접 기록하고 싶어서 만들게 된 개인 프로젝트입니다.
+
+**개요**
+- 기간: 2026.03 ~ 2026.04
+- 역할: 개인 프로젝트 (기획 · 디자인 · 개발 전 과정)
+
+**주요 기능**
+- 현재 상영 중·인기·개봉 예정 영화 목록 조회 (TMDB API)
+- 제목 기반 영화 검색
+- 영화 상세: 포스터, 장르, 상영시간, 감독, 출연진, TMDB 평점
+- OTT 바로가기: Netflix·Disney+·Watcha 등 국내 스트리밍 링크 (JustWatch 데이터)
+- 볼영화 찜 북마크 저장
+- 감상 일기: 별점·관람 날짜·감상문·태그 포함, 작성·수정·삭제
+- Google 계정 소셜 로그인
+
+**기술 아키텍처**
+- Next.js 14 (App Router), Tailwind CSS
+- Firebase Authentication (Google 로그인), Firestore (일기·찜 데이터)
+- TMDB API (영화 정보·OTT 정보)`,
+    tech: ["Next.js", "Tailwind CSS", "Firebase", "TMDB API", "JavaScript"],
+    thumbnail: new URL("../assets/yeflix.png", import.meta.url).href,
+    github: "https://github.com/T1-hotae/yeflix",
+    demo: "https://yeflix-diary.vercel.app",
+    youtube: null,
+    period: "2026.03 ~ 2026.04",
+    gradient: "linear-gradient(135deg, #1a0a0a 0%, #3d1515 50%, #1a0000 100%)",
+  },
+  {
     id: "pofol",
     title: "Pofol",
     subtitle: "포트폴리오 공유 & 팀 모집 플랫폼 · 서비스 중",

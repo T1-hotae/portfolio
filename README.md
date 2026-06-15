@@ -17,11 +17,13 @@
 
 | 프로젝트       | 설명                                                                    | 기간              | 기술                                                           |
 | -------------- | ----------------------------------------------------------------------- | ----------------- | -------------------------------------------------------------- |
-| **모요**       | Slack·밴드 UX를 개선한 커뮤니티 웹 서비스 (게시물, 실시간 채팅, 캘린더) | 2025.09 ~ 2025.12 | React, TypeScript, Redux Toolkit, FastAPI, PostgreSQL, AWS EC2 |
-| **강림이**     | 강남대 공지·알림 통합 모바일 앱 (App Store · Google Play 출시)          | 2025.12 ~ 2026.01 | React Native, Expo, FastAPI, PostgreSQL, AWS EC2               |
-| **두고먹고**   | 냉장고 식재료 관리 및 AI 레시피 추천 앱                                 | 2025.12 ~ 2026.02 | React Native, Expo, TypeScript, AI Vision API                  |
-| **코드바이트** | CS 개념 퀴즈 학습 모바일 앱 (게이미피케이션)                            | 2026.03 ~ 2026.06 | React Native, Expo, TypeScript, Zustand, Spring Boot           |
-| **Pofol**      | 포트폴리오 공유 & 팀 모집 플랫폼 (캡스톤 디자인)                        | 2026.03 ~ 2026.06 | Next.js, TypeScript, Spring Boot, PostgreSQL, Redis, Vercel    |
+| **모요**              | Slack·밴드 UX를 개선한 커뮤니티 웹 서비스 (게시물, 실시간 채팅, 캘린더) | 2025.09 ~ 2025.12 | React, TypeScript, Redux Toolkit, FastAPI, PostgreSQL, AWS EC2   |
+| **강림이**            | 강남대 공지·알림 통합 모바일 앱 (App Store · Google Play 출시)          | 2025.12 ~ 2026.01 | React Native, Expo, FastAPI, PostgreSQL, AWS EC2                 |
+| **두고먹고**          | 냉장고 식재료 관리 및 AI 레시피 추천 앱                                 | 2025.12 ~ 2026.02 | React Native, Expo, TypeScript, AI Vision API                    |
+| **코드바이트**        | CS 개념 퀴즈 학습 모바일 앱 (게이미피케이션)                            | 2026.03 ~ 2026.06 | React Native, Expo, TypeScript, Zustand, Spring Boot             |
+| **Pofol**             | 포트폴리오 공유 & 팀 모집 플랫폼 (캡스톤 디자인)                        | 2026.03 ~ 2026.06 | Next.js, TypeScript, Spring Boot, PostgreSQL, Redis, Vercel      |
+| **교학 점검 배정**    | 강의실 점검표 자동 배정 알고리즘 웹 사이트                              | 2026.03 ~ 2026.05 | React, JavaScript, Vite, CSS                                     |
+| **Yeflix**            | 영화 검색·OTT 바로가기·감상 일기 개인 서비스                           | 2026.03 ~ 2026.04 | Next.js, Tailwind CSS, Firebase, TMDB API                        |
 
 ---
 
