@@ -9,7 +9,7 @@ export const projects = [
 
 **개요**
 - 기간: 2025.09.10 ~ 2025.12.06
-- 팀/역할: 3명 / 풀스택 (기여도 60%)
+- 팀/역할: 3명 (개발 경험 전무한 학생들로 구성) / 풀스택 (기여도 60~80%)
 
 **주요 기여**
 - React + TypeScript 기반 전체 UI/UX 구현 (테마 포함)
@@ -26,7 +26,12 @@ export const projects = [
 **배운 점**
 - 애자일 협업 프로세스: 일일 스크럼·스프린트 계획으로 팀 개발 흐름 체득
 - Shadcn/UI·TailwindCSS 기반 UI 구성 경험
-- 풀스택 역량 확장: 프론트에서 백엔드·배포·운영까지`,
+- 풀스택 역량 확장: 프론트에서 백엔드·배포·운영까지
+
+**추후 보완 과제**
+- 게시물 기능 고도화 (좋아요, 댓글, 동영상 첨부, 투표)
+- 캘린더 UI/UX 재설계
+- 더보기 탭 미구현 기능 완성`,
     tech: [
       "React",
       "TypeScript",
@@ -42,7 +47,7 @@ export const projects = [
       "Nginx",
       "CI/CD",
     ],
-    thumbnail: new URL("../assets/moyo.png", import.meta.url).href,
+    thumbnail: new URL("../assets/icons/moyo.png", import.meta.url).href,
     github: "https://github.com/Moyo-project/Moyo_front",
     demo: null,
     youtube: "https://youtu.be/EiS4uzRdQ9s?si=PsaotVYH29RZe28P",
@@ -52,25 +57,39 @@ export const projects = [
   {
     id: "ganglimi",
     title: "강림이",
-    subtitle: "강남대 공지·알림 통합 앱 · 서비스 중",
+    subtitle: "강남대 공지·알림 통합 앱 · 우수상 수상 · 실사용자 800명",
     description:
-      "분산된 교내 공지를 한 화면에서 탐색하고, 카테고리 구독 기반 푸시 알림으로 핵심 공지를 놓치지 않도록 돕는 모바일 통합 서비스. App Store · Google Play 출시.",
+      "분산된 교내 공지를 한 화면에서 탐색하고, 카테고리 구독 기반 푸시 알림으로 핵심 공지를 놓치지 않도록 돕는 모바일 통합 서비스. App Store · Google Play 출시, 실사용자 800명 확보.",
     longDescription: `분산된 강남대학교 교내 공지를 한 화면에서 탐색하고, 카테고리 구독 기반 푸시 알림으로 핵심 공지를 놓치지 않도록 돕는 모바일 통합 서비스입니다.
 
 **개요**
 - 기간: 2025.12.23 ~ 2026.01.31
 - 팀/역할: 3명 / 팀장·총괄 기획·풀스택 (기획~개발 전 과정 주도, 팀 구성·예산·교수 컨펌 포함)
+- 수상: 동계방학 역량강화 프로젝트 우수상 + 장학금
 
 **주요 기여**
 - React Native(Expo) 기반 통합 공지 피드 UI/UX 전체 구현
-- FastAPI 기반 공지 크롤링 파이프라인 구축 및 프론트 연동
+- FastAPI 기반 공지 크롤링 파이프라인 구축 및 프론트 연동 (강남대학교 학사·장학·취업 등 카테고리별 공지)
+- 텍스트 파싱 고도화 (이모티콘 구분, 표 구조 파싱 로직)
 - 북마크 기능 구현 및 상세 조회 흐름 설계
 - NAVER 지도 API 연동 캠퍼스맵 구현
 - Expo Notifications 기반 카테고리 구독형 푸시 알림 구현
-- AWS EC2 배포, App Store · Google Play 출시
+- App Store · Google Play 출시, AWS EC2 → Oracle Cloud 서버 이전 (서버 비용 절감 목적)
 
 **기술 아키텍처**
-- RN(Expo, TS, TanStack Query) ↔ FastAPI(Python, BeautifulSoup 크롤링) ↔ PostgreSQL / AWS EC2 / Expo Push`,
+- RN(Expo, TS, TanStack Query) ↔ FastAPI(Python, BeautifulSoup 크롤링) ↔ PostgreSQL / AWS EC2 → Oracle Cloud / Expo Push
+
+**어려웠던 점 & 해결**
+- App Store 심사 통과 과정이 예상보다 까다로웠고, 출시 후 특정 이미지 크기가 깨지는 오류가 발생해 재현 환경을 만들어 직접 디버깅
+- 14명의 테스터 피드백(지도 UI 개선, 다크모드 UI 등)을 우선순위에 따라 순차 반영
+- 서버 비용 부담을 줄이기 위해 Oracle Cloud로 직접 이전 작업 수행
+
+**결과**
+- App Store + Google Play 합산 실사용자 800명 확보, 현재도 서비스 운영 중
+
+**배운 점**
+- 실서비스는 완성이 끝이 아니라 출시 후 QA·피드백 반영·운영이 개발만큼 중요하다는 것을 체감
+- 비용을 고려한 인프라 의사결정 경험 (AWS → Oracle Cloud 이전)`,
     tech: [
       "React Native",
       "Expo",
@@ -81,10 +100,11 @@ export const projects = [
       "BeautifulSoup",
       "PostgreSQL",
       "AWS EC2",
+      "Oracle Cloud",
       "Expo Push",
       "NAVER Maps API",
     ],
-    thumbnail: new URL("../assets/kangrimi.jpg", import.meta.url).href,
+    thumbnail: new URL("../assets/icons/kangrimi.jpg", import.meta.url).href,
     github: "https://github.com/CampusNotice/Frontend",
     demo: null,
     youtube: "https://youtube.com/shorts/K7Fhfh7sPzY?feature=share",
@@ -129,7 +149,7 @@ export const projects = [
       "AI Vision API",
       "Figma",
     ],
-    thumbnail: new URL("../assets/Domeok2.png", import.meta.url).href,
+    thumbnail: new URL("../assets/icons/Domeok2.png", import.meta.url).href,
     github: null,
     demo: null,
     youtube: null,
@@ -163,16 +183,26 @@ export const projects = [
 - 소셜 랭킹: 팔로우 기반 친구 랭킹 조회
 - 닉네임 기반 사용자 검색 · 팔로우·언팔로우
 
+**기술적으로 인상 깊었던 부분**
+- 퀴즈 로직 — 동일 난수(LCG) 기반 독립 생성: 프론트와 백엔드가 동일한 시드를 공유해 통신 지연 없이 양측에서 똑같은 퀴즈를 독립적으로 생성. 프론트가 즉각 문제를 제공하고, 백엔드가 결과 제출 시 동일 로직으로 재현해 검증하는 구조
+- 퀴즈 DB 구조 — 과목 → 대주제 → 소주제(Concept)로 이어지는 계층형 트리 구조. 리프 노드(자식 없는 최하위 개념)만 출제 타겟으로 한정해 일관성 확보. Concept_Detail을 Key-Value 형태로 연결해 객관식·단답형·OX 다형적 문제 생성 지원
+
 **기술 아키텍처**
 - 프론트엔드: React Native (Expo 54), TypeScript, Zustand, TanStack Query, Reanimated, Lottie
-- 백엔드: Java 21, Spring Boot, Spring Security + JWT, Spring Data JPA
-- DB: PostgreSQL
-- 배포: Docker · Docker Compose
+- 백엔드 (1차): Java 21, Spring Boot, Spring Security + JWT, Spring Data JPA, PostgreSQL, Docker
+- 백엔드 (2차, 개인 리팩토링): Node.js, MongoDB, Vercel 서버리스 배포
+
+**Spring → Node.js + MongoDB 전환 이유 (개인 리팩토링)**
+- Isomorphic JS: FE(RN)와 BE(Node.js)가 같은 언어를 써서 난수 기반 알고리즘을 공통 모듈로 공유 가능 → 구현 불일치 리스크 원천 차단
+- Schema-less: Key-Value 형태의 Concept_Detail을 MongoDB 도큐먼트로 직관적 저장 (RDB의 복잡한 EAV 패턴 불필요)
+- 계층형 데이터 조회 최적화: 트리 구조를 Embedding·Aggregation으로 처리 → 복잡한 JOIN 없이 읽기 성능 극대화
+- I/O 성능: Node.js 비동기 I/O 특성이 퀴즈 요청처럼 I/O 집중적인 워크로드에 적합
 
 **배운 점**
 - 기획 문서의 중요성: PRD·ERD·네이밍 컨벤션 등 협업 기준 문서가 없어 혼선이 생겼고, 명확한 문서화가 팀 개발의 핵심임을 체감했다.
 - React Native 애니메이션 심화: SVG 요소별 Reanimated 애니메이션으로 캐릭터를 구현하고, Lottie 라이브러리까지 활용하며 모바일 애니메이션 기법을 폭넓게 익혔다.
-- 다양한 협업 스타일 경험: 3명의 백엔드 팀원과 각각 다른 방식(알고리즘 공동 설계, API 문서 기반 티키타카, AI 워크플로 문서 공유)으로 협업하며 상황에 맞는 소통 방식을 찾는 능력을 키웠다.`,
+- 다양한 협업 스타일 경험: 3명의 백엔드 팀원과 각각 다른 방식(알고리즘 공동 설계, API 문서 기반 티키타카, AI 워크플로 문서 공유)으로 협업하며 상황에 맞는 소통 방식을 찾는 능력을 키웠다.
+- 백엔드 개발자의 사고방식 체득: Java GC 원리, Spring vs Node.js vs MongoDB 차이를 잘하는 백엔드 개발자와의 대화로 배우며, 코드 하나하나의 실행 방식을 뜯어보는 사고 습관을 이해하게 됨`,
     tech: [
       "React Native",
       "Expo",
@@ -183,8 +213,11 @@ export const projects = [
       "Java",
       "PostgreSQL",
       "Docker",
+      "Node.js",
+      "MongoDB",
+      "Vercel",
     ],
-    thumbnail: new URL("../assets/Codebite.png", import.meta.url).href,
+    thumbnail: new URL("../assets/icons/Codebite.png", import.meta.url).href,
     github: null,
     demo: null,
     youtube: "https://youtube.com/shorts/AqkF0Z2CXk0?feature=share",
@@ -226,7 +259,7 @@ export const projects = [
 **기술 스택**
 - React 18 + Vite 6, 순수 CSS (외부 UI 라이브러리 미사용)`,
     tech: ["React", "JavaScript", "Vite", "CSS"],
-    thumbnail: new URL("../assets/Gyohak.png", import.meta.url).href,
+    thumbnail: new URL("../assets/icons/Gyohak.png", import.meta.url).href,
     github: "https://github.com/T1-hotae/Gyohak1Team",
     demo: "https://gyohak1-team.vercel.app",
     youtube: null,
@@ -257,9 +290,20 @@ export const projects = [
 **기술 아키텍처**
 - Next.js 14 (App Router), Tailwind CSS
 - Firebase Authentication (Google 로그인), Firestore (일기·찜 데이터)
-- TMDB API (영화 정보·OTT 정보)`,
+- TMDB API (영화 정보·OTT 정보)
+
+**설계에서 인상 깊은 포인트**
+- Firestore 합성 키 전략: 문서 ID를 \`\${userId}_\${movieId}\`로 구성해 "영화당 일기·찜 1개" 제약을 스키마 레벨에서 자연스럽게 구현 (upsert 패턴)
+- 복합 인덱스 회피: 정렬을 클라이언트 사이드로 위임해 Firestore 인덱스 비용 절감 — 소규모 개인 프로젝트에 적합한 트레이드오프를 의식적으로 선택
+- 단일 fetcher 패턴: TMDB API 요청을 하나의 fetcher 함수로 감싸 api_key·language 파라미터를 공통 주입
+
+**배운 점**
+- Firebase Auth + Firestore를 활용한 인증·데이터 관리 전반 경험
+- 외부 API(TMDB) 연동 및 래퍼 함수 설계
+- 트레이드오프를 의식적으로 선택하는 설계 감각 (인덱스 비용 vs 클라이언트 정렬)
+- 내가 직접 쓰는 서비스를 만들며 사용자 관점에서 지속적으로 개선하는 경험`,
     tech: ["Next.js", "Tailwind CSS", "Firebase", "TMDB API", "JavaScript"],
-    thumbnail: new URL("../assets/yeflix.png", import.meta.url).href,
+    thumbnail: new URL("../assets/icons/yeflix.png", import.meta.url).href,
     github: "https://github.com/T1-hotae/yeflix",
     demo: "https://yeflix-diary.vercel.app",
     youtube: null,
@@ -321,6 +365,7 @@ export const projects = [
       "Vercel",
       "OpenAI",
     ],
+    thumbnail: new URL("../assets/icons/Pofol.png", import.meta.url).href,
     github: null,
     demo: "https://pofol-community.vercel.app/",
     youtube: null,
