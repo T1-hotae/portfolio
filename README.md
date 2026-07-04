@@ -16,7 +16,7 @@ TODO: 실제 배포 후 아래 배지의 링크를 실제 URL로 교체하세요
 
 ## 소개
 
-<img src="src/assets/profiles/img1.png" alt="황호태" width="140" align="right" />
+<img src="src/assets/profiles/img1.jpg" alt="황호태" width="140" align="right" />
 
 사용자 관점에서 편리한 경험을 만드는 개발자입니다. 작동하는 UI를 넘어 흐름과 맥락까지 고민하며, 협업과 코드 품질을 중요하게 생각합니다.
 

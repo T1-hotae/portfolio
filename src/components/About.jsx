@@ -1,4 +1,4 @@
-import img1 from "../assets/profiles/img1.png";
+import img1 from "../assets/profiles/img1.jpg";
 
 const skills = [
   "JavaScript",
