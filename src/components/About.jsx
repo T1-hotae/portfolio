@@ -5,8 +5,8 @@ const skills = [
   "TypeScript",
   "React",
   "React Native",
-  "Node.js",
-  "HTML & CSS",
+  "Spring boot(Java)",
+  "FastAPI",
 ];
 
 export default function About() {
