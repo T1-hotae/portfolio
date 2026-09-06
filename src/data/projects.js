@@ -262,7 +262,7 @@ export const projects = [
     thumbnail: new URL("../assets/icons/Gyohak.png", import.meta.url).href,
     github: "https://github.com/T1-hotae/Gyohak1Team",
     demo: "https://gyohak1-team.vercel.app",
-    youtube: null,
+    youtube: "https://youtu.be/YiRrBlYtHJk?si=XxjU6quhPRBEiMUf",
     period: "2026.03 ~ 2026.05",
     gradient: "linear-gradient(135deg, #0a1628 0%, #1a2d4a 50%, #0d2137 100%)",
   },

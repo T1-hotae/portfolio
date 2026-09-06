@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../data/projects";
+import { getYoutubeEmbedUrl, isYoutubeShorts } from "../utils/youtube";
 
 const GithubIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -19,12 +20,6 @@ function parseMarkdown(text) {
   });
 }
 
-function getYouTubeId(url) {
-  if (!url) return null;
-  const match = url.match(/(?:youtu\.be\/|youtube\.com\/watch\?v=)([^&\n?#]+)/);
-  return match ? match[1] : null;
-}
-
 export default function ProjectDetail() {
   const { id } = useParams();
   const project = projects.find((p) => p.id === id);
@@ -40,7 +35,8 @@ export default function ProjectDetail() {
     );
   }
 
-  const youtubeId = getYouTubeId(project.youtube);
+  const embedUrl = getYoutubeEmbedUrl(project.youtube);
+  const isShorts = isYoutubeShorts(project.youtube);
 
   return (
     <main className="detail-page">
@@ -79,10 +75,10 @@ export default function ProjectDetail() {
           </div>
         </div>
 
-        {youtubeId ? (
-          <div className="detail-video">
+        {embedUrl ? (
+          <div className={`detail-video${isShorts ? " is-shorts" : ""}`}>
             <iframe
-              src={`https://www.youtube.com/embed/${youtubeId}`}
+              src={embedUrl}
               title={`${project.title} 시연 영상`}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

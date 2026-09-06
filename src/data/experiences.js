@@ -25,7 +25,7 @@ export const experiences = [
     title: "강남대학교 교학1팀 · 근로 장학생",
     company: "강남대학교",
     companyUrl: null,
-    period: "2025.03 ~ 현재",
+    period: "2025.03 ~ 2026.08",
     description: [
       "교학팀 행정 업무 보조 및 학사 관련 지원",
       "전화 응대 및 기자재 관리, 강의실 점검 업무 수행",

@@ -2,12 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { projects } from "../data/projects";
 import ProjectCard from "./ProjectCard";
-
-function getYoutubeEmbedUrl(url) {
-  if (!url) return null;
-  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([A-Za-z0-9_-]{11})/);
-  return match ? `https://www.youtube.com/embed/${match[1]}` : null;
-}
+import { getYoutubeEmbedUrl } from "../utils/youtube";
 
 const ArrowIcon = () => (
   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
