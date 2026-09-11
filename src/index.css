@@ -358,6 +358,26 @@ img { display: block; }
   flex-shrink: 0;
 }
 
+.skill-tag.has-cert { cursor: pointer; }
+
+.skill-cert-badge {
+  margin-left: auto;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-dim);
+  border: 1px solid var(--border-hover);
+  padding: 2px 6px;
+  border-radius: 999px;
+  flex-shrink: 0;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.skill-tag.has-cert:hover .skill-cert-badge {
+  background: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
+}
+
 .about-image-wrap {
   position: relative;
 }
@@ -470,6 +490,156 @@ img { display: block; }
   line-height: 1.7;
 }
 
+/* Featured Projects */
+.featured-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.featured-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.featured-card.reverse { grid-template-columns: 1fr 1fr; }
+.featured-card.reverse .featured-thumb { order: 2; }
+.featured-card.reverse .featured-body { order: 1; }
+
+@media (max-width: 860px) {
+  .featured-card, .featured-card.reverse {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+  }
+  .featured-card.reverse .featured-thumb { order: 0; }
+  .featured-card.reverse .featured-body { order: 0; }
+}
+
+.featured-thumb {
+  display: block;
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.featured-thumb-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 24px;
+}
+
+.featured-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--text);
+  padding: 3px 8px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.featured-period {
+  font-size: 11px;
+  color: var(--text-dim);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.featured-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.featured-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.featured-title a:hover { text-decoration: underline; }
+
+.featured-thumb { cursor: pointer; }
+
+.featured-subtitle {
+  font-size: 13px;
+  color: var(--text-sub);
+  margin-bottom: 10px;
+}
+
+.featured-impact {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  border: 1px solid var(--border-hover);
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.featured-highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.featured-highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-sub);
+}
+.featured-highlights li svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--text-dim);
+}
+
+.featured-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+.featured-tech span {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-sub);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.featured-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.projects-subheading {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dim);
+  margin-bottom: 20px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -487,16 +657,15 @@ img { display: block; }
   border: 1px solid var(--border);
   cursor: pointer;
   transition: border-color 0.25s, transform 0.25s;
-  aspect-ratio: 3/4;
   display: flex;
   flex-direction: column;
 }
 .pcard:hover { border-color: var(--border-hover); transform: translateY(-4px); }
 
 .pcard-thumb {
-  flex: 1;
   position: relative;
   overflow: hidden;
+  aspect-ratio: 4/3;
 }
 
 .pcard-gradient {
@@ -546,6 +715,22 @@ img { display: block; }
   color: var(--text-dim);
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.pcard-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+.pcard-tech span {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-dim);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 2px 7px;
+  border-radius: 999px;
 }
 
 /* Overlay */

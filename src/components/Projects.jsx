@@ -2,7 +2,11 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { projects } from "../data/projects";
 import ProjectCard from "./ProjectCard";
+import FeaturedProjectCard from "./FeaturedProjectCard";
 import { getYoutubeEmbedUrl } from "../utils/youtube";
+
+const featuredProjects = projects.filter((p) => p.featured);
+const otherProjects = projects.filter((p) => !p.featured);
 
 const ArrowIcon = () => (
   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -38,8 +42,16 @@ export default function Projects() {
       <p className="projects-intro">
         카드를 클릭하면 프로젝트 설명과 기술 스택을 확인할 수 있습니다.
       </p>
+
+      <div className="featured-projects">
+        {featuredProjects.map((project, i) => (
+          <FeaturedProjectCard key={project.id} project={project} reverse={i % 2 === 1} />
+        ))}
+      </div>
+
+      <h3 className="projects-subheading">그 외 프로젝트</h3>
       <div className="projects-grid">
-        {projects.map((project) => (
+        {otherProjects.map((project) => (
           <ProjectCard key={project.id} project={project} onClick={() => setSelected(project)} />
         ))}
       </div>

@@ -1,13 +1,5 @@
 import img1 from "../assets/profiles/img1.jpg";
-
-const skills = [
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "React Native",
-  "Spring boot(Java)",
-  "FastAPI",
-];
+import { skills } from "../data/skills";
 
 export default function About() {
   return (
@@ -33,13 +25,26 @@ export default function About() {
             공유하고, 코드 품질과 유지보수성을 높이는 작업을 적극적으로
             맡습니다.
           </p>
-          <p>주로 사용하는 기술 스택입니다.</p>
+          <p>주로 사용하는 기술 스택입니다. 인프런 수료증은 뱃지를 클릭하면 확인할 수 있습니다.</p>
           <div className="skills-grid">
-            {skills.map((s) => (
-              <span className="skill-tag" key={s}>
-                {s}
-              </span>
-            ))}
+            {skills.map((s) =>
+              s.cert ? (
+                <a
+                  href={s.cert}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="skill-tag has-cert"
+                  key={s.name}
+                >
+                  {s.name}
+                  <span className="skill-cert-badge">수료증</span>
+                </a>
+              ) : (
+                <span className="skill-tag" key={s.name}>
+                  {s.name}
+                </span>
+              )
+            )}
           </div>
         </div>
         <div className="about-image-wrap">

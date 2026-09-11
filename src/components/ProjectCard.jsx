@@ -12,6 +12,12 @@ export default function ProjectCard({ project, onClick }) {
         <p className="pcard-period">{project.period}</p>
         <h3 className="pcard-title">{project.title}</h3>
         {project.subtitle && <span className="pcard-badge">{project.subtitle}</span>}
+        {project.tech?.length > 0 && (
+          <div className="pcard-tech">
+            {project.tech.slice(0, 4).map((t) => <span key={t}>{t}</span>)}
+            {project.tech.length > 4 && <span>+{project.tech.length - 4}</span>}
+          </div>
+        )}
       </div>
     </div>
   );
