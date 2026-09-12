@@ -1,5 +1,20 @@
 import { Link } from "react-router-dom";
 
+function getYoutubeEmbedUrl(url) {
+  if (!url) return null;
+  const patterns = [
+    /youtu\.be\/([^?&/]+)/,
+    /youtube\.com\/shorts\/([^?&/]+)/,
+    /youtube\.com\/watch\?v=([^?&/]+)/,
+    /youtube\.com\/embed\/([^?&/]+)/,
+  ];
+  for (const pattern of patterns) {
+    const match = url.match(pattern);
+    if (match) return `https://www.youtube.com/embed/${match[1]}`;
+  }
+  return null;
+}
+
 const ArrowIcon = () => (
   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
     <path d="M7 17L17 7M17 7H7M17 7v10" />
@@ -19,13 +34,26 @@ const CheckIcon = () => (
 );
 
 export default function FeaturedProjectCard({ project, reverse }) {
+  const embedUrl = getYoutubeEmbedUrl(project.youtube);
+
   return (
     <div className={`featured-card${reverse ? " reverse" : ""}`}>
-      <Link to={`/projects/${project.id}`} className="featured-thumb" style={{ background: project.gradient }}>
-        {project.thumbnail && (
-          <img src={project.thumbnail} alt={project.title} className="featured-thumb-img" />
-        )}
-      </Link>
+      {embedUrl ? (
+        <div className="featured-thumb featured-thumb-video" style={{ background: project.gradient }}>
+          <iframe
+            src={embedUrl}
+            title={`${project.title} 시연 영상`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+      ) : (
+        <Link to={`/projects/${project.id}`} className="featured-thumb" style={{ background: project.gradient }}>
+          {project.thumbnail && (
+            <img src={project.thumbnail} alt={project.title} className="featured-thumb-img" />
+          )}
+        </Link>
+      )}
       <div className="featured-body">
         <span className="featured-tag">대표 프로젝트</span>
         <p className="featured-period">{project.period}</p>

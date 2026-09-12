@@ -112,10 +112,10 @@ export const projects = [
     highlights: [
       "학사·장학·취업 등 분산 공지를 한 화면에 통합, 카테고리 구독 푸시 알림",
       "FastAPI 크롤링 파이프라인 자동화 + 이모티콘·표 구조 텍스트 파싱",
-      "NAVER 지도 API 캠퍼스맵, 북마크, 다크모드 UI",
+      "캠퍼스맵, 북마크, 다크모드 UI",
       "App Store·Google Play 정식 출시 후 실사용자 800명 확보, 지속 운영 중",
     ],
-    youtube: "https://youtube.com/shorts/K7Fhfh7sPzY?feature=share",
+    youtube: "https://youtu.be/7wnbnJiUuUk?si=oWt6APnP3RjO4aQl",
     appStore:
       "https://apps.apple.com/kr/app/%EA%B0%95%EB%A6%BC%EC%9D%B4/id6758569535",
     playStore:
