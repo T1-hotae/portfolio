@@ -20,7 +20,7 @@ TODO: 실제 배포 후 아래 배지의 링크를 실제 URL로 교체하세요
 
 사용자 관점에서 편리한 경험을 만드는 개발자입니다. 작동하는 UI를 넘어 흐름과 맥락까지 고민하며, 협업과 코드 품질을 중요하게 생각합니다.
 
-- 강남대학교 소프트웨어응용학부 재학 (GPA 4.31 / 4.5)
+- 강남대학교 ICT융합공학부 소프트웨어전공 재학 · 인공지능 부전공 (GPA 4.31 / 4.5)
 - 주요 기술: JavaScript, TypeScript, React, React Native, Node.js, HTML & CSS
 - Email: [ghxo03215@gmail.com](mailto:ghxo03215@gmail.com)
 - GitHub: [@T1-hotae](https://github.com/T1-hotae)
@@ -40,6 +40,7 @@ TODO: 실제 배포 후 아래 배지의 링크를 실제 URL로 교체하세요
 | **Pofol** | 포트폴리오 공유 & 팀 모집 플랫폼 (캡스톤 디자인) | 2026.03 ~ 2026.06 | Next.js, TypeScript, Spring Boot, PostgreSQL, Redis, Vercel | [Demo](https://pofol-community.vercel.app/) |
 | **교학 점검 배정** | 강의실 점검표 자동 배정 알고리즘 웹 사이트 | 2026.03 ~ 2026.05 | React, JavaScript, Vite, CSS | [GitHub](https://github.com/T1-hotae/Gyohak1Team) · [Demo](https://gyohak1-team.vercel.app) |
 | **Yeflix** | 영화 검색·OTT 바로가기·감상 일기 개인 서비스 | 2026.03 ~ 2026.04 | Next.js, Tailwind CSS, Firebase, TMDB API | [GitHub](https://github.com/T1-hotae/yeflix) · [Demo](https://yeflix-diary.vercel.app) |
+| **귀연록** | 이름·생년월일 기반 귀신 캐릭터 매칭 엔터테인먼트 웹 서비스 (사주 계산 엔진 직접 구현, 1인 개발) | 2026.08 ~ 진행 중 | Next.js, React, TypeScript, Supabase, PostgreSQL, Vercel | [Demo](https://guiyeonrok-app.vercel.app) |
 
 각 프로젝트의 상세 내용(담당 역할, 아키텍처, 배운 점)은 사이트 내 프로젝트 상세 페이지 또는 [`src/data/projects.js`](src/data/projects.js)에서 확인할 수 있습니다.
 
@@ -78,6 +79,7 @@ TODO: 실제 배포 후 아래 배지의 링크를 실제 URL로 교체하세요
 
 | 활동 | 기관 | 기간 |
 | --- | --- | --- |
+| EST AI Challengers: Road to AI 2기 | (주)이스트소프트 | 2026.08 ~ 2026.09 |
 | SW개발자 6기 인턴 | 인턴IN메타 | 2025.07 ~ 2025.08 |
 | MOTIV 학과동아리 부회장 | 강남대학교 | 2025.03 ~ 2025.12 |
 | 교학1팀 근로 장학생 | 강남대학교 | 2025.03 ~ 현재 |

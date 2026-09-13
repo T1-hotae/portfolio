@@ -1,5 +1,17 @@
 export const experiences = [
   {
+    title: "EST AI Challengers: Road to AI 2기",
+    company: "(주)이스트소프트",
+    companyUrl: null,
+    period: "2026.08 ~ 2026.09",
+    description: [
+      "20일간 Python 데이터 전처리, 머신러닝/딥러닝, LangChain, RAG, LangGraph 학습 및 실전 응용",
+      "온라인 기획(1단계) → 오프라인 해커톤(2단계) 과정 참여",
+      "고객응대 근로자 보호 AI '응대가드 AI' 기획 — 기획서 초안 작성 및 화면 설계 담당",
+      "Next.js + FastAPI + LangChain/LangGraph + RAG 기반, STT로 실시간 발화를 텍스트화해 위험도를 판단하고 근거 문서 기반 대응 문장을 생성하는 구조 설계",
+    ],
+  },
+  {
     title: "인턴IN메타 · SW개발자 6기",
     company: "인턴IN메타",
     companyUrl: null,

@@ -9,8 +9,10 @@ export default function About() {
       <div className="about-grid">
         <div className="about-text">
           <p>
-            안녕하세요. <strong>강남대학교 소프트웨어응용학부</strong>에 재학
-            중인 프론트엔드 개발자 황호태입니다. (GPA 4.31 / 4.5)
+            안녕하세요. <strong>강남대학교 ICT융합공학부</strong>에서{" "}
+            <strong>소프트웨어</strong>를 전공하고 <strong>인공지능</strong>을
+            부전공하며 재학 중인 프론트엔드 개발자 황호태입니다. (GPA 4.3 /
+            4.5)
           </p>
           <p>
             사람들의 불편을 발견하면 지나치지 않고, 직접 서비스로 만들어
@@ -25,7 +27,10 @@ export default function About() {
             공유하고, 코드 품질과 유지보수성을 높이는 작업을 적극적으로
             맡습니다.
           </p>
-          <p>주로 사용하는 기술 스택입니다. 인프런 수료증은 뱃지를 클릭하면 확인할 수 있습니다.</p>
+          <p>
+            주로 사용하는 기술 스택입니다. 인프런 수료증은 뱃지를 클릭하면
+            확인할 수 있습니다.
+          </p>
           <div className="skills-grid">
             {skills.map((s) =>
               s.cert ? (
@@ -43,7 +48,7 @@ export default function About() {
                 <span className="skill-tag" key={s.name}>
                   {s.name}
                 </span>
-              )
+              ),
             )}
           </div>
         </div>
