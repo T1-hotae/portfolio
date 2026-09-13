@@ -40,6 +40,8 @@ TODO: 실제 배포 후 아래 배지의 링크를 실제 URL로 교체하세요
 | **Pofol** | 포트폴리오 공유 & 팀 모집 플랫폼 (캡스톤 디자인) | 2026.03 ~ 2026.06 | Next.js, TypeScript, Spring Boot, PostgreSQL, Redis, Vercel | [Demo](https://pofol-community.vercel.app/) |
 | **교학 점검 배정** | 강의실 점검표 자동 배정 알고리즘 웹 사이트 | 2026.03 ~ 2026.05 | React, JavaScript, Vite, CSS | [GitHub](https://github.com/T1-hotae/Gyohak1Team) · [Demo](https://gyohak1-team.vercel.app) |
 | **Yeflix** | 영화 검색·OTT 바로가기·감상 일기 개인 서비스 | 2026.03 ~ 2026.04 | Next.js, Tailwind CSS, Firebase, TMDB API | [GitHub](https://github.com/T1-hotae/yeflix) · [Demo](https://yeflix-diary.vercel.app) |
+| **글줍** | 직접 찍은 글자 사진을 오려 붙여 편지를 만드는 한글 랜섬노트 앱 (1인 개발, 스토어 제출 준비 중) | 2026.06 ~ 진행 중 | React Native, Expo SDK 54, TypeScript, Reanimated, AdMob, EAS Build | [GitHub](https://github.com/T1-hotae/ransomenote) |
+| **미핑** | 실제 예상 이동시간을 비교해 공평한 중간 약속 장소를 추천하는 앱 (팀 프로젝트, 출시 준비 중) | 2026.07 ~ 진행 중 | Flutter, Riverpod, Firebase Cloud Functions, Firestore, 카카오맵 API | [GitHub](https://github.com/miping-team/miping) |
 | **귀연록** | 이름·생년월일 기반 귀신 캐릭터 매칭 엔터테인먼트 웹 서비스 (사주 계산 엔진 직접 구현, 1인 개발) | 2026.08 ~ 진행 중 | Next.js, React, TypeScript, Supabase, PostgreSQL, Vercel | [Demo](https://guiyeonrok-app.vercel.app) |
 
 각 프로젝트의 상세 내용(담당 역할, 아키텍처, 배운 점)은 사이트 내 프로젝트 상세 페이지 또는 [`src/data/projects.js`](src/data/projects.js)에서 확인할 수 있습니다.
@@ -51,6 +53,7 @@ TODO: 실제 배포 후 아래 배지의 링크를 실제 URL로 교체하세요
 **Frontend**
 
 - React, React Native, Next.js
+- Flutter (Dart)
 - TypeScript, JavaScript
 - Redux Toolkit, Zustand, TanStack Query
 - TailwindCSS, Shadcn/UI
@@ -59,6 +62,7 @@ TODO: 실제 배포 후 아래 배지의 링크를 실제 URL로 교체하세요
 
 - FastAPI (Python)
 - Spring Boot (Java)
+- Firebase (Cloud Functions, Firestore)
 - PostgreSQL, Redis
 
 **DevOps / Infra**
