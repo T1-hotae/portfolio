@@ -63,7 +63,7 @@ export const geuljub = {
     "EAS Build",
   ],
   thumbnail: new URL("../../assets/icons/Geuljub.png", import.meta.url).href,
-  github: "https://github.com/T1-hotae/ransomenote",
+  github: null,
   demo: null,
   youtube: null,
   period: "2026.06 ~ 진행 중",

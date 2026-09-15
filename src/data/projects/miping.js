@@ -60,7 +60,7 @@ export const miping = {
     "Google AdMob",
   ],
   thumbnail: new URL("../../assets/icons/Miping.png", import.meta.url).href,
-  github: "https://github.com/miping-team/miping",
+  github: null,
   demo: null,
   youtube: null,
   period: "2026.07 ~ 진행 중",
