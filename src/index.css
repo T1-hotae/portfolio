@@ -654,6 +654,11 @@ img { display: block; }
   margin-bottom: 20px;
 }
 
+/* 앞 그리드와 붙지 않도록 두 번째 이후 그룹 제목에만 간격을 준다. */
+.projects-subheading-gap {
+  margin-top: 56px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

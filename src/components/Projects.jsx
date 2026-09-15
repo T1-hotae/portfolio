@@ -6,7 +6,14 @@ import FeaturedProjectCard from "./FeaturedProjectCard";
 import { getYoutubeEmbedUrl } from "../utils/youtube";
 
 const featuredProjects = projects.filter((p) => p.featured);
-const otherProjects = projects.filter((p) => !p.featured);
+const rest = projects.filter((p) => !p.featured);
+// status별로 그룹을 나눠, 개발 중인 것과 끝난 것이 같은 기준으로 읽히지 않게 한다.
+const GROUPS = [
+  { status: "developing", heading: "개발 중인 프로젝트" },
+  { status: "live", heading: "서비스 중인 프로젝트" },
+  { status: "ended", heading: "종료된 프로젝트" },
+].map((g) => ({ ...g, items: rest.filter((p) => p.status === g.status) }))
+  .filter((g) => g.items.length > 0);
 
 const ArrowIcon = () => (
   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -49,12 +56,18 @@ export default function Projects() {
         ))}
       </div>
 
-      <h3 className="projects-subheading">그 외 프로젝트</h3>
-      <div className="projects-grid">
-        {otherProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} onClick={() => setSelected(project)} />
-        ))}
-      </div>
+      {GROUPS.map((group, i) => (
+        <div key={group.status}>
+          <h3 className={`projects-subheading${i > 0 ? " projects-subheading-gap" : ""}`}>
+            {group.heading}
+          </h3>
+          <div className="projects-grid">
+            {group.items.map((project) => (
+              <ProjectCard key={project.id} project={project} onClick={() => setSelected(project)} />
+            ))}
+          </div>
+        </div>
+      ))}
 
       {selected && (
         <div className="modal-backdrop" onClick={() => setSelected(null)}>
