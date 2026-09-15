@@ -35,7 +35,7 @@ export const dugomukgo = {
     "Figma",
   ],
   thumbnail: new URL("../../assets/icons/Domeok2.png", import.meta.url).href,
-  github: null,
+  github: "https://github.com/T1-hotae/domeok-public",
   demo: null,
   youtube: null,
   period: "2025.12 ~ 2026.02",

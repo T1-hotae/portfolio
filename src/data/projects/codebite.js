@@ -62,7 +62,7 @@ export const codebite = {
     "Docker",
   ],
   thumbnail: new URL("../../assets/icons/Codebite.png", import.meta.url).href,
-  github: null,
+  github: "https://github.com/CodeBiteApp/frontend",
   demo: null,
   youtube: "https://youtube.com/shorts/AqkF0Z2CXk0?feature=share",
   period: "2026.03 ~ 2026.06",
