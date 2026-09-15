@@ -73,10 +73,14 @@ for (const p of projects) {
         warn(p.id, `개요 필드 순서 어긋남: "${fields[i - 1]}" 뒤에 "${fields[i]}"`);
   }
 
-  // 4) 기간 표기 (YYYY.MM ~ YYYY.MM 또는 ~ 진행 중, 괄호 보충은 허용)
+  // 4) 기간 표기는 YYYY.MM ~ YYYY.MM (또는 ~ 진행 중)만 허용. 괄호 보충 금지.
   const periodLine = lines.find((l) => l.startsWith("- 기간:"));
-  if (periodLine && !/^- 기간: \d{4}\.\d{2} ~ (\d{4}\.\d{2}|진행 중)( \(.+\))?$/.test(periodLine))
-    warn(p.id, `기간 표기 형식 불일치: ${periodLine}`);
+  const periodValue = periodLine?.slice("- 기간: ".length);
+  if (periodValue && !/^[0-9]{4}[.][0-9]{2} ~ ([0-9]{4}[.][0-9]{2}|진행 중)$/.test(periodValue))
+    warn(p.id, `기간 표기 형식 불일치 (괄호 보충 금지): ${periodValue}`);
+  // 개요의 기간과 카드에 뜨는 period 값이 어긋나면 안 된다
+  if (periodValue && periodValue !== p.period)
+    warn(p.id, `개요 기간과 period 불일치: "${periodValue}" vs "${p.period}"`);
 
   // 5) 최상위 키
   const keys = Object.keys(p);
