@@ -57,7 +57,7 @@ export const pofol = {
     "OpenAI",
   ],
   thumbnail: new URL("../../assets/icons/Pofol.png", import.meta.url).href,
-  github: null,
+  github: "https://github.com/PoFol-Capstone/Frontend/commits/main/",
   demo: "https://pofol-community.vercel.app/",
   youtube: "https://youtu.be/bewrnvM06zs",
   period: "2026.03 ~ 2026.06",
